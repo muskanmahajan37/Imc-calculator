@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+.container {
+    min-width: 350px;
+    min-height: 45vh;
+    padding:2rem ;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    font-weight: 800;
+}
+
+.first-main{
+    text-align: center;
+}
+
+.all-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.all-formu{
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+input{
+    border: 1px solid #ccc;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+span{
+    margin: 1px;
+}
+
+.sedentary-state{
+    margin: 10px;
+}
+
+.all-activity{
+    justify-content: space-between;
+    flex-direction: row
+}
+
+.destaque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 900;
+    margin: 10px;
+}
+
+::placeholder{
+    color: black;
+    font-weight: 800;
+}
+
+button{
+    padding: 1px 35px;
+    background-color:aliceblue;
+    border: 1px solid #ccc;
+    font-weight: 800;
+}
+.imc{
+    display: none ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom:10px
+}
+
+ html{
+    background-image: url("./img/pexels-stanley-morales-3186386.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+} 

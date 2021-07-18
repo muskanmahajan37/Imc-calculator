@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd5d25e904.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="calcu.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="general">
+        <div class="container">
+            <div class="first-main">
+                <h1>Your IMC</h1>
+            </div>
+
+            <div class="all-form">
+                <span> Age </span>
+                <input type="text" name="idade" id="idade" placeholder=" 35 anos ">
+                <span><i class="fas fa-text-height"></i> Height</span>
+                <input type="text" name="altura" id="altura" placeholder=" 1.30 ">
+                <span><i class="fas fa-balance-scale-right"></i> Weight </span>
+                <input type="text" name="peso" id="peso" placeholder=" 100kg ">
+            </div>
+
+            <div class="genres">
+                <span><i class="fas fa-venus-mars"></i>Genres</span>
+            </div>
+
+            <div class="all-formu">
+                <input type="radio" name="genero"> Women
+                <input type="radio" name="genero"> Men
+                <input type="radio" name="genero"> Not Binary
+                <input type="radio" name="genero"> Others
+            </div>
+            <div class="sedentary-state">
+                <span><i class="fas fa-bicycle"></i> Sedentary level</span>
+            </div>
+
+            <div class="all-activity">
+                <input type="radio" name="atividade"> Sedentary
+                <input type="radio" name="atividade"> Moderate
+                <input type="radio" name="atividade">Intense
+            </div>
+            <div class="destaque">
+                <button type="submit" id="button">Calcular</button>
+            </div>
+            <div class="imc" id="div-imc">
+                <h5 id="h5-imc"> Seu Imc é ? </h5>
+                <span id="resultado-imc">58</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector("#button")
+        btn.onclick = function () {
+            console.log("Entrou")
+            const peso = document.getElementById("peso").value
+            const altura = document.getElementById("altura").value
+            const idade = document.getElementById("idade").value
+            var resultado = peso / (altura * altura)
+            document.getElementById("resultado-imc").innerHTML = resultado
+            document.getElementById("div-imc").style.display = "flex"
+        }
+    </script>
+</body>
+
+</html>
